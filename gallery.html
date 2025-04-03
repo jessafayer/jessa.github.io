@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessa Fayer | Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --background: #fff9f9;
+      --primary: #1a1a1a;
+      --accent: #ff6b9e;
+      --muted: #888;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--background);
+      color: var(--primary);
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      background: linear-gradient(to right, #ffe0eb, #fff9f9);
+    }
+
+    header h1 {
+      font-family: 'Parisienne', cursive;
+      font-size: 3rem;
+      color: var(--accent);
+    }
+
+    .gallery-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .gallery-section h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .gallery-section p {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px var(--shadow);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .gallery-caption {
+      padding: 1rem;
+      text-align: center;
+      font-weight: 500;
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      background: #f7f7f7;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .gallery-section h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jessa Fayer</h1>
+  </header>
+
+  <section class="gallery-section">
+    <h2>Gallery</h2>
+    <p>Explore featured shoots in fashion, natural light, and artistic styles.</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="1718348478.370242.jpg" alt="Gallery Image 1">
+        <div class="gallery-caption">Look One</div>
+      </div>
+      <div class="gallery-item">
+        <img src="D4277404-BEA9-42E0-8CC7-9342419902C0.JPEG" alt="Gallery Image 2">
+        <div class="gallery-caption">Look Two</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Jessa Fayer - 29.PNG" alt="Gallery Image 3">
+        <div class="gallery-caption">Look Three</div>
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_2821.JPG" alt="Gallery Image 4">
+        <div class="gallery-caption">Look Four</div>
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_4585 2.jpg" alt="Gallery Image 5">
+        <div class="gallery-caption">Look Five</div>
+      </div>
+      <div class="gallery-item">
+        <img src="JPEG image-3B3B3CCBB8AB-1.jpeg" alt="Gallery Image 6">
+        <div class="gallery-caption">Look Six</div>
+      </div>
+      <div class="gallery-item">
+        <img src="JPEG image-81DFCEBCACAE-1.jpeg" alt="Gallery Image 7">
+        <div class="gallery-caption">Look Seven</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Jessa Fayer - 7.PNG" alt="Gallery Image 8">
+        <div class="gallery-caption">Look Eight</div>
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_1373.JPG" alt="Gallery Image 9">
+        <div class="gallery-caption">Look Nine</div>
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_2821.JPG" alt="Gallery Image 10">
+        <div class="gallery-caption">Look Ten</div>
+      </div>
+      <div class="gallery-item">
+        <img src="17C02072-9CFD-4D90-8251-ABC60FEABC01.JPEG" alt="Gallery Image 11">
+        <div class="gallery-caption">Look Eleven</div>
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_8308.jpg" alt="Gallery Image 12">
+        <div class="gallery-caption">Look Twelve</div>
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_3528.jpg" alt="Gallery Image 13">
+        <div class="gallery-caption">Look Thirteen</div>
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_1305.JPG" alt="Gallery Image 14">
+        <div class="gallery-caption">Look Fourteen</div>
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_3035 2.jpg" alt="Gallery Image 15">
+        <div class="gallery-caption">Look Fifteen</div>
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_0999.jpg" alt="Gallery Image 16">
+        <div class="gallery-caption">Look Sixteen</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Jessa Fayer. All rights reserved.
+  </footer>
+
+</body>
+</html>
