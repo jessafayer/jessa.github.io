@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jessa Fayer – Actress & Model</title>
+  <style>
+    :root {
+      --pink: #f8d4dc;
+      --gray: #f0f0f0;
+      --black: #222;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--gray);
+      color: var(--black);
+    }
+
+    nav {
+      background-color: var(--pink);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: var(--black);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ffdbe5;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #f8d4dc, #fff);
+      color: var(--black);
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .btn {
+      background-color: var(--black);
+      color: var(--pink);
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--black);
+      color: var(--pink);
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      nav {
+        gap: 1rem;
+        padding: 0.75rem;
+      }
+
+      .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="video.html">Demo Reel</a>
+    <a href="acting-videos.html">Acting Videos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Jessa Fayer</h1>
+    <p>Film & TV Actress | Print Model<br>Explore my latest projects, reels, and portfolio.</p>
+    <a class="btn" href="gallery.html">View Gallery</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Jessa Fayer | All rights reserved
+  </footer>
+
+</body>
+</html>
