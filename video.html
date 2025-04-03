@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jessa Fayer | Acting Videos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acting Videos | Jessa Fayer</title>
   <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -25,6 +25,28 @@
       font-family: 'Roboto', sans-serif;
       background-color: var(--background);
       color: var(--primary);
+    }
+
+    nav {
+      background-color: #f8d4dc;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #222;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ffdbe5;
     }
 
     header {
@@ -77,11 +99,10 @@
       box-shadow: 0 8px 20px var(--shadow);
     }
 
-    .video-card iframe,
-    .video-card video {
+    .video-card iframe {
       width: 100%;
-      height: auto;
-      display: block;
+      height: 100%;
+      min-height: 200px;
       border: none;
     }
 
@@ -113,13 +134,21 @@
 </head>
 <body>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="demo.html">Demo Reel</a>
+    <a href="acting-videos.html">Acting Videos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
   <header>
     <h1>Jessa Fayer</h1>
   </header>
 
   <section class="videos-section">
     <h2>Acting Videos</h2>
-    <p>Watch select scenes, monologues, and demo work from my portfolio.</p>
+    <p>Watch select scenes, monologues, and demo performances from my portfolio.</p>
 
     <div class="video-grid">
       <div class="video-card">
@@ -136,8 +165,6 @@
         <iframe src="https://www.youtube.com/embed/YOUR_THIRD_VIDEO_ID" allowfullscreen></iframe>
         <div class="video-caption">Character Monologue</div>
       </div>
-
-      <!-- Add more video-card blocks as needed -->
     </div>
   </section>
 
